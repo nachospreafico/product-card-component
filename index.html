@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Product Details</title>
+  </head>
+  <body>
+    <main class="card-container">
+      <div class="overlay hidden" id="overlay"></div>
+      <div class="card-wrapper">
+        <img
+          src="./assets/images/image-product-mobile.jpg"
+          alt="product image"
+          class="img-mobile"
+        />
+        <img
+          src="./assets/images/image-product-desktop.jpg"
+          alt="product image"
+          class="img-desktop"
+        />
+
+        <div class="card-body">
+          <p class="category">PERFUME</p>
+          <h1 class="title">Gabrielle Essence Eau de Parfum</h1>
+          <p class="description">
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <div class="price-container">
+            <p class="price">$149.99</p>
+            <span class="old-price">$169.99</span>
+          </div>
+          <button class="card-btn" id="add-to-cart">
+            <img
+              src="./assets/images/icon-cart.svg"
+              alt="cart icon"
+              class="cart"
+            />
+            <p>Add to Cart</p>
+          </button>
+        </div>
+      </div>
+      <div class="success-msg hidden" id="success-msg">
+        <h2 class="success-title">The product was added to your cart!</h2>
+        <div class="success-btn">
+          <button class="to-cart">Go to Cart</button>
+          <button class="keep-shopping">Keep Shopping</button>
+        </div>
+      </div>
+    </main>
+
+    <footer></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
